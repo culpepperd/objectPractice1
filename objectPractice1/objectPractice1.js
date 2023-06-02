@@ -1,3 +1,4 @@
+// taxi object
 var taxi = {
 	make: "Webville Motors",
 	model: "Taxi",
@@ -8,6 +9,7 @@ var taxi = {
 	mileage: 281341
 };
 
+// cadillac object
 var cadi = {
 	make: "GM",
 	model: "Cadillac",
@@ -18,6 +20,7 @@ var cadi = {
 	mileage: 12892
 };
 
+// fiat object
 var fiat = {
 	make: "Fiat",
 	model: "500",
@@ -28,6 +31,7 @@ var fiat = {
 	mileage: 88000
 };
 
+// chevy object
 var chevy = {
 	make: "Chevy",
 	model: "Bel Air",
@@ -38,6 +42,7 @@ var chevy = {
 	mileage: 1021
 };
 
+// prequalification function
 function prequal(car) {
 	if (car.mileage > 10000) {
 		return false;
@@ -47,10 +52,10 @@ function prequal(car) {
 	return true;
 }
 
-var worthALook = prequal(taxi);
+var worthALook = prequal(chevy);
 
 if (worthALook) {
-	console.log("You gotta check out this " + taxi.make + " " + taxi.model);
+	console.log("You gotta check out this " + chevy.make + " " + chevy.model + "!");
 } else {
-	console.log("You should really pass on the " + taxi.make + " " + taxi.model);
+	console.log("You should really pass on the " + chevy.make + " " + chevy.model + "...");
 }
